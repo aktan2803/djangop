@@ -1,0 +1,25 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <title>home</title>
+</head>
+<body>
+    <aside>
+        <span class="logo">magaz</span>
+        <ul>
+            <a href="{% url 'home' %}"><li>home</li></a>
+            <a href="{% url 'about' %}"><li>about</li></a>
+            <a href=""><li>cont</li></a>
+        </ul>
+
+    </aside>
+    <h1>home page</h1>
+    <img src="{% static 'main/img/product.jpeg' %}" alt="img1">
+</body>
+</html>
